@@ -30,26 +30,28 @@ Then, install your gems:
 
 Here's an example of how to use Bitten:
 
-     ActiveRecord::Migration.create_table do |t|
-       t.integer :bits, null: false, default: 0
-     end
-  
-     class User < ActiveRecord::Base
-       include Bitten
-       has_bits :editor, :author, :reviewer
-     end
-  
-     user = User.new editor: true
-     user.editor? # => true
-     user.author? # => false
-     user.reviewer? # => false
-     user.author = true
-     user.author? # => true
-     user.save
-     User.author # => [user]
-     User.editor # => [user]
-     User.reviewer # => []
-     User.not_reviewer # => [user]
+```ruby
+ActiveRecord::Migration.create_table do |t|
+  t.integer :bits, null: false, default: 0
+end
+
+class User < ActiveRecord::Base
+  include Bitten
+  has_bits :editor, :author, :reviewer
+end
+
+user = User.new editor: true
+user.editor? # => true
+user.author? # => false
+user.reviewer? # => false
+user.author = true
+user.author? # => true
+user.save
+User.author # => [user]
+User.editor # => [user]
+User.reviewer # => []
+User.not_reviewer # => [user]
+```
 
 ### Documentation
 
