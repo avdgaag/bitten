@@ -1,4 +1,4 @@
-# Bitten [![Build Status](https://secure.travis-ci.org/avdgaag/bitten.png?branch=master)](http://travis-ci.org/avdgaag/bitten)
+# Bitten [![Build Status](https://secure.travis-ci.org/avdgaag/bitten.png?branch=master)](http://travis-ci.org/avdgaag/bitten) [![Code Climate](https://d3s6mut3hikguw.cloudfront.net/github/avdgaag/bitten.png)](https://codeclimate.com/github/avdgaag/bitten)
 
 ## Introduction
 
